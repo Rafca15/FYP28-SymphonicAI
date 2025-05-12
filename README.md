@@ -61,6 +61,8 @@ Make sure SF2_PATH in config.py points to the correct location, for example
 
 ```python
 SF2_PATH = "FluidR3_GM.sf2"
+
+## we recommend putting your sf2 file in the asset folder
 ```
 
  Running the App
