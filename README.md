@@ -68,7 +68,7 @@ SF2_PATH = "FluidR3_GM.sf2"
  Running the App
 Navigate to the front end directory, and run:
 ```bash
-python -m http.server 8000 (or whatever port is specified in config.py
+python -m http.server 8000 ##(or whatever port is specified in config.py)
 ```
 
 After completing the setup, start another terminal, you can start the application by running:
