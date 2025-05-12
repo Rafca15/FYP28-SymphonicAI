@@ -1,0 +1,192 @@
+
+#keys .activekey {
+    background: rgb(133, 80, 255);
+    transform: translateY( 4px );
+    box-shadow: none;
+      
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+#kb {
+    margin: 0 auto;
+    width: 2300px;
+}
+
+.logo {
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .white { height: 200px; }
+    .black { height: 120px; }
+}
+
+
+
+.fullscreen .logo,
+.fullscreen #options {
+    display: none;
+}
+
+body.fullscreen {
+    background: black;
+}
+
+#options {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    overflow: scroll;
+    padding-bottom: 10px;
+    padding-left: 1px;
+    position: relative;
+    width: 2300px;
+}
+
+li {
+    align-items: flex-end;
+    display: flex;
+    float: left;
+    justify-content: center;
+    padding-bottom: 24px;
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+li:hover {
+    transform: translateY( -3px );
+  }
+
+
+.white + .white {
+    margin-left: 1px;
+}
+
+.white {
+    background: white;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+    height: 300px;
+    margin-left: -15px;
+    width: 40px;
+    color: #222;
+}
+
+.black {
+    background: linear-gradient(3deg, rgb(0, 0, 0), rgb(100, 100, 100) 90%);
+    border-color: #666 #222 #111 #555;
+    border-radius: 0 0 2px 2px;
+    border-style: solid;
+    border-width: 1px 2px 7px;
+    height: 170px;
+    margin-left: -14px;
+    position: relative;
+    width: 26px;
+    z-index: 1;
+    color: #ddd;
+    left: 0;
+}
+
+
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+    .white {
+    height: 200px;
+    }
+    .black {
+    height: 100px;
+    }
+}
+
+.notename,
+.keyname {
+    /* you can toggle these back on if you like */
+    display: none;
+  }
+
+.labels .notename,
+.keylabels .keyname {
+    display: none;
+}
+
+#keys .activekey {
+    border-bottom-width: 1px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+#opts {
+    display: none;
+    text-align: left;
+}
+
+#toolbar {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#toolbar:-webkit-full-screen {
+    display: none;
+}
+
+#labels,
+#keylabels {
+    font-size: 20px;
+}
+
+#color {
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 2px;
+}
+
+label,
+input {
+    cursor: pointer;
+}
+
+.soundon #soundisyes,
+
+#soundisnot {
+    display: inline;
+}
+
+
+#soundisyes,
+.soundon #soundisnot {
+    display: none;
+}
+
+
+
+
+#record-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(133, 80, 255);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#record-btn.recording {
+    background-color: green;
+}
+
+
